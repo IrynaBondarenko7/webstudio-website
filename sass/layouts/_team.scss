@@ -1,0 +1,65 @@
+.team {
+  background-color: var(--portfolio-button-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.people__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.people__item {
+  background-color: var(--white-color);
+  width: 100%;
+
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  @include tablet {
+    @include calc(2, 30px);
+  }
+  @include desktop {
+    @include calc(4, 30px);
+  }
+  padding-bottom: 30px;
+}
+.people__img {
+  margin-bottom: 30px;
+}
+.people__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  margin-bottom: 10px;
+}
+.people__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+
+/*.social-item:not(:first-child) {
+  margin-left: 10px;
+}*/
+
+.social-list--background {
+  background-color: var(--white-color);
+}
+.social-list__icon {
+  fill: var(--social-color);
+
+  .social-list__link:hover &,
+  .social-list__link:focus & {
+    fill: var(--white-color);
+  }
+}

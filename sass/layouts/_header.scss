@@ -1,0 +1,110 @@
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--border-colour);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+  gap: 50px;
+}
+.contacts {
+  display: flex;
+  gap: 50px;
+}
+
+.header-logo {
+  font-family: "Raleway", sans-seri;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--accent-color);
+  margin-right: 93px;
+}
+.log-studio {
+  color: var(--logo-studio-color);
+}
+
+.header-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.header-link {
+  text-decoration: none;
+  color: var(--title-color);
+  transition: var(--transition-time-hover);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.current-link {
+  padding-bottom: 32px;
+  position: relative;
+  color: var(--accent-color);
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: var(--accent-color);
+    border-radius: 2px;
+    position: absolute;
+    bottom: -1px;
+  }
+}
+
+.contacts-mail,
+.contacts-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  text-decoration: none;
+  background-color: var(--white-color);
+  transition: var(--transition-time-hover);
+}
+.contacts-mail:hover,
+.contacts-mail:focus {
+  color: var(--accent-color);
+}
+
+.contacts-tel:hover,
+.contacts-tel:focus {
+  color: var(--accent-color);
+}
+.contacts-envelope {
+  fill: currentColor;
+}
+.contacts-phone {
+  fill: currentColor;
+}
+/*.contacts-mail:hover .contacts-envelope,
+.contacts-mail:focus .contacts-envelope {
+  fill: var(--accent-color);
+}*/
+
+.contacts-mail {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.contacts-tel {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}

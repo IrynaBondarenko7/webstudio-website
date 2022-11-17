@@ -1,0 +1,32 @@
+.work {
+  display: none;
+  @include desktop {
+    display: block;
+  }
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.pictures__list {
+  display: flex;
+  gap: 30px;
+}
+
+.pictures__item {
+  position: relative;
+}
+.pictures__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  padding: 27px;
+  position: absolute;
+  bottom: 0;
+}
