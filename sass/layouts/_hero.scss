@@ -2,34 +2,55 @@
   background-color: var(--hero-bg-color);
   padding-top: 118px;
   padding-bottom: 118px;
-  width: 100%;
-  max-width: 1600px;
-  //height: 600px;
+  max-width: 100%;
   margin: 0 auto;
-  background-image: linear-gradient(
-      to right,
-      var(--img-overlay-color),
-      var(--img-overlay-color)
-    ),
-    url(../images/img-hero.jpg);
+  background-image: var(--gradient), url(/images/hero/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  @include retina {
+    background-image: var(--gradient), url(/images/hero/hero-bg-mob-2x.jpg);
+  }
+  @include tablet {
+    background-image: var(--gradient), url(/images/hero/hero-bg-tab.jpg);
+    @include retina {
+      background-image: var(--gradient), url(/images/hero/herо-bg-tab-2x.jpg);
+    }
+  }
+  @include desktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+    max-width: 1600px;
+    background-image: var(--gradient), url(/images/hero/img-hero-desk.jpg);
+    @include retina {
+      background-image: var(--gradient), url(/images/hero/hero-bg-desk-2x.jpg);
+    }
+  }
 }
+
 .hero-title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 20px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-  max-width: 696px;
+  max-width: 360px;
   margin: 0 auto 30px;
+  @include mobile {
+    font-size: 26px;
+  }
+  @include desktop {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 .button {
-  min-width: 216px;
+  min-width: 200px;
   height: 50px;
   font-family: inherit;
   background-color: var(--accent-color);
@@ -50,5 +71,8 @@
   &:focus,
   &:hover {
     background-color: var(--button-hover);
+  }
+  @include desktop {
+    min-width: 216px;
   }
 }

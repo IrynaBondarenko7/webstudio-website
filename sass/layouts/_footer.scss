@@ -25,6 +25,9 @@
 }
 .address-item:not(:last-child) {
   margin-bottom: 8px;
+  @include desktop {
+    margin-bottom: 9px;
+  }
 }
 .address-map {
   font-weight: 400;
