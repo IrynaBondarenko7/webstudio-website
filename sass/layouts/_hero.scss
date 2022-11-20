@@ -11,13 +11,13 @@
   @include retina {
     background-image: var(--gradient), url(/images/hero/hero-bg-mob-2x.jpg);
   }
-  @include tablet {
+  @media screen and (min-width: 481px) {
     background-image: var(--gradient), url(/images/hero/hero-bg-tab.jpg);
     @include retina {
       background-image: var(--gradient), url(/images/hero/herо-bg-tab-2x.jpg);
     }
   }
-  @include desktop {
+  @media screen and (min-width: 769px) {
     padding-top: 200px;
     padding-bottom: 200px;
     height: 600px;
@@ -31,7 +31,7 @@
 
 .hero-title {
   font-weight: 900;
-  font-size: 20px;
+  font-size: 5vw;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.06em;

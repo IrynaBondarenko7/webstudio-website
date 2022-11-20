@@ -1,9 +1,15 @@
 .header {
   padding-top: 16px;
   padding-bottom: 16px;
-  //padding-top: 24px;
-  //padding-bottom: 25px;
   border-bottom: 1px solid var(--border-colour);
+  @include tablet {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  @include desktop {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .header-container {
   display: flex;
@@ -15,8 +21,11 @@
   align-items: center;
 }
 .header-list {
-  display: flex;
+  display: none;
   gap: 50px;
+  @include tablet {
+    display: flex;
+  }
 }
 .contacts {
   display: flex;
@@ -26,12 +35,18 @@
 .header-logo {
   font-family: "Raleway", sans-seri;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--accent-color);
-  margin-right: 93px;
+  @include tablet {
+    margin-right: 87px;
+  }
+  @include desktop {
+    font-size: 26px;
+    margin-right: 93px;
+  }
 }
 .log-studio {
   color: var(--logo-studio-color);
@@ -45,6 +60,9 @@
   z-index: 1;
   padding-top: 10px;
   padding-bottom: 48px;
+  @include tablet {
+    display: none;
+  }
 }
 .container-menu {
   width: 100%;
@@ -61,6 +79,9 @@
 .menu-open {
   background-color: transparent;
   border-color: transparent;
+  @include tablet {
+    display: none;
+  }
 }
 .menu-close {
   background-color: transparent;
@@ -88,7 +109,7 @@
 }
 .menu-link {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 8vw;
   line-height: 47px;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -97,6 +118,9 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+  @include mobile {
+    font-size: 40px;
   }
 }
 .menu-current-link {
@@ -119,12 +143,18 @@
   }
 }
 .menu-contacts-tel {
-  font-size: 34px;
+  font-size: 7vw;
   line-height: 1.17;
+  @include mobile {
+    font-size: 34px;
+  }
 }
 .menu-contacts-mail {
-  font-size: 24px;
+  font-size: 5vw;
   line-height: 1.16;
+  @include mobile {
+    font-size: 24px;
+  }
 }
 .menu-soc {
   display: flex;
@@ -132,12 +162,15 @@
 .menu-soc-link {
   text-decoration: none;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 4vw;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
   display: block;
   padding: 0 10px;
+  @include mobile {
+    font-size: 18px;
+  }
 }
 .menu-soc-item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -159,9 +192,12 @@
   &:focus {
     color: var(--accent-color);
   }
+  @include tablet {
+    display: block;
+  }
 }
 .current-link {
-  padding-bottom: 32px;
+  //padding-bottom: 32px;
   position: relative;
   color: var(--accent-color);
   &::after {
@@ -172,11 +208,22 @@
     background: var(--accent-color);
     border-radius: 2px;
     position: absolute;
-    bottom: -1px;
+    bottom: -33px;
   }
 }
 .contacts {
   display: none;
+  @include tablet {
+    display: block;
+  }
+  @include desktop {
+    display: flex;
+  }
+}
+.contacts-list:not(:last-child) {
+  @include tablet {
+    margin-bottom: 10px;
+  }
 }
 
 .contacts-mail,
