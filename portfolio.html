@@ -27,8 +27,8 @@
       <div class="container header-container">
         <nav class="header-navigation">
           <a href="./index.html" class="header-logo"
-            >Web<span class="log-studio">Studio</span></a
-          >
+            >Web<span class="log-studio">Studio</span>
+          </a>
           <ul class="header-list list">
             <li class="header-item">
               <a href="./index.html" class="header-link">Студія</a>
@@ -60,6 +60,92 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open" data-menu-open>
+          <svg class="heder-button-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container-menu">
+          <div class="menu-top-wrap">
+            <button type="button" class="menu-close" data-menu-close>
+              <svg class="heder-button-icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="menu-list list">
+              <li class="menu-item">
+                <a href="./index.html" class="menu-link menu-current-link"
+                  >Студія</a
+                >
+              </li>
+              <li class="menu-item">
+                <a href="./portfolio.html" class="menu-link">Портфоліо</a>
+              </li>
+              <li class="menu-item">
+                <a href="" class="menu-link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-bottom-wrap">
+            <ul class="menu-contacts list">
+              <li class="menu-contacts-item">
+                <a
+                  href="tel:+380961111111"
+                  class="menu-contacts-tel menu-contacts-link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="menu-contacts-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="menu-contacts-mail menu-contacts-link"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="menu-soc list">
+              <li class="menu-soc-item">
+                <a
+                  class="menu-soc-link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="menu-soc-item">
+                <a
+                  class="menu-soc-link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Twitter</a
+                >
+              </li>
+              <li class="menu-soc-item">
+                <a
+                  class="menu-soc-link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Facebook</a
+                >
+              </li>
+              <li class="menu-soc-item">
+                <a
+                  class="menu-soc-link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -87,12 +173,35 @@
             <li class="projects-item">
               <a href="#" class="projects-link">
                 <div class="projects-top-wrap">
-                  <img
-                    class="projects-img"
-                    src="./images/img-webcite.jpg"
-                    alt="Ілюстрація веб-сайту"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-1-desk.jpg    1x,
+                        ./images/portfolio/portfolio-1-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-1-tab.jpg    1x,
+                        ./images/portfolio/portfolio-1-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-1-mob.jpg    1x,
+                        ./images/portfolio/portfolio-1-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="projects-img"
+                      src="./images/portfolio/portfolio-1-mob.jpg"
+                      alt="Ілюстрація веб-сайту"
+                      width="450"
+                    />
+                  </picture>
                   <p class="projects-top-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -108,12 +217,35 @@
             <li class="projects-item">
               <a href="#" class="projects-link">
                 <div class="projects-top-wrap">
-                  <img
-                    class="projects-img"
-                    src="./images/img-designe1.jpg"
-                    alt="Баскетболісти"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-2-desk.jpg    1x,
+                        ./images/portfolio/portfolio-2-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-2-tab.jpg    1x,
+                        ./images/portfolio/portfolio-2-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-2-mob.jpg    1x,
+                        ./images/portfolio/portfolio-2-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="projects-img"
+                      src="./images/portfolio/portfolio-2-mob.jpg"
+                      alt="Баскетболісти"
+                      width="450"
+                    />
+                  </picture>
                   <p class="projects-top-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -131,12 +263,36 @@
             <li class="projects-item">
               <a href="#" class="projects-link">
                 <div class="projects-top-wrap">
-                  <img
-                    class="projects-img"
-                    src="./images/img-app1.jpg"
-                    alt="Логотип ресторану"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-3-desk.jpg    1x,
+                        ./images/portfolio/portfolio-3-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-3-tab.jpg    1x,
+                        ./images/portfolio/portfolio-3-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-3-mob.jpg    1x,
+                        ./images/portfolio/portfolio-3-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="projects-img"
+                      src="./images/portfolio/portfolio-3-mob.jpg"
+                      alt="Логотип ресторану"
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="projects-top-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -152,12 +308,35 @@
             <li class="projects-item">
               <a href="#" class="projects-link">
                 <div class="projects-top-wrap">
-                  <img
-                    class="projects-img"
-                    src="./images/img-marketing1.jpg"
-                    alt="Навушники"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-4-desk.jpg    1x,
+                        ./images/portfolio/portfolio-4-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-4-tab.jpg    1x,
+                        ./images/portfolio/portfolio-4-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-4-mob.jpg    1x,
+                        ./images/portfolio/portfolio-4-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="projects-img"
+                      src="./images/portfolio/portfolio-4-mob.jpg"
+                      alt="Навушники"
+                      width="450"
+                    />
+                  </picture>
                   <p class="projects-top-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -172,13 +351,36 @@
             </li>
             <li class="projects-item">
               <a href="#" class="projects-link">
-                <div class="projects-top-wrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-5-desk.jpg    1x,
+                      ./images/portfolio/portfolio-5-desk-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-5-tab.jpg    1x,
+                      ./images/portfolio/portfolio-5-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-5-mob.jpg    1x,
+                      ./images/portfolio/portfolio-5-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
                   <img
                     class="projects-img"
-                    src="./images/img-app2.jpg"
+                    src="./images/portfolio/portfolio-5-mob.jpg"
                     alt="Дві коробки"
-                    width="370"
+                    width="450"
                   />
+                </picture>
+                <div class="projects-top-wrap">
                   <p class="projects-top-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -194,12 +396,35 @@
             <li class="projects-item">
               <a href="#" class="projects-link">
                 <div class="projects-top-wrap">
-                  <img
-                    class="projects-img"
-                    src="./images/img-webcite2.jpg"
-                    alt="Монітор"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-6-desk.jpg    1x,
+                        ./images/portfolio/portfolio-6-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-6-tab.jpg    1x,
+                        ./images/portfolio/portfolio-6-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-6-mob.jpg    1x,
+                        ./images/portfolio/portfolio-6-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="projects-img"
+                      src="./images/portfolio/portfolio-6-mob.jpg"
+                      alt="Монітор"
+                      width="450"
+                    />
+                  </picture>
                   <p class="projects-top-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -215,12 +440,35 @@
             <li class="projects-item">
               <a href="#" class="projects-link">
                 <div class="projects-top-wrap">
-                  <img
-                    class="projects-img"
-                    src="./images/img-designe2.jpg"
-                    alt="Розворот журналу"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-7-desk.jpg    1x,
+                        ./images/portfolio/portfolio-7-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-7-tab.jpg    1x,
+                        ./images/portfolio/portfolio-7-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-7-mob.jpg    1x,
+                        ./images/portfolio/portfolio-7-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="projects-img"
+                      src="./images/portfolio/portfolio-7-mob.jpg"
+                      alt="Розворот журналу"
+                      width="450"
+                    />
+                  </picture>
                   <p class="projects-top-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -236,12 +484,35 @@
             <li class="projects-item">
               <a href="#" class="projects-link">
                 <div class="projects-top-wrap">
-                  <img
-                    class="projects-img"
-                    src="./images/img-marketing2.jpg"
-                    alt="Бірка"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-8-desk.jpg    1x,
+                        ./images/portfolio/portfolio-8-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-8-tab.jpg    1x,
+                        ./images/portfolio/portfolio-8-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-8-mob.jpg    1x,
+                        ./images/portfolio/portfolio-8-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="projects-img"
+                      src="./images/portfolio/portfolio-8-mob.jpg"
+                      alt="Бірка"
+                      width="450"
+                    />
+                  </picture>
                   <p class="projects-top-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -257,12 +528,35 @@
             <li class="projects-item">
               <a href="#" class="projects-link"
                 ><div class="projects-top-wrap">
-                  <img
-                    class="projects-img"
-                    src="./images/img-app3.jpg"
-                    alt="Ноутбук"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-9-desk.jpg    1x,
+                        ./images/portfolio/portfolio-9-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-9-tab.jpg    1x,
+                        ./images/portfolio/portfolio-9-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-9-mob.jpg    1x,
+                        ./images/portfolio/portfolio-9-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="projects-img"
+                      src="./images/portfolio/portfolio-9-mob.jpg"
+                      alt="Ноутбук"
+                      width="450"
+                    />
+                  </picture>
                   <p class="projects-top-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -281,7 +575,7 @@
     </main>
     <!--Підвал сайту-->
     <footer class="footer">
-      <div class="container">
+      <div class="container footer-container">
         <div class="footer-box">
           <div class="footer-contacts-box">
             <a href="./index.html" class="header-logo footer-log"
@@ -359,26 +653,26 @@
               </li>
             </ul>
           </div>
-          <div class="subscription-form-wrap">
-            <b class="subscription-text">Підпишіться на розсилку</b>
-
-            <form class="subscription-form" name="subscription">
-              <input
-                class="subscription-input"
-                type="email"
-                name="user-email"
-                placeholder="E-mail"
-              />
-              <button type="submit" class="subscription-button">
-                Підписатися
-                <svg class="subscription-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
+        </div>
+        <div class="subscription-form-wrap">
+          <b class="subscription-text">Підпишіться на розсилку</b>
+          <form class="subscription-form" name="subscription">
+            <input
+              class="subscription-input"
+              type="email"
+              name="user-email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="subscription-button">
+              Підписатися
+              <svg class="subscription-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
