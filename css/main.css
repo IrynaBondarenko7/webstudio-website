@@ -678,7 +678,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .contacts-list:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -758,8 +758,6 @@ body {
 }
 @media screen and (min-width: 769px) {
   .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
     height: 600px;
     max-width: 1600px;
     background-image: var(--gradient), url(../images/hero/img-hero-desk.jpg);
@@ -768,6 +766,12 @@ body {
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .hero {
     background-image: var(--gradient), url(../images/hero/hero-bg-desk-2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -865,15 +869,12 @@ body {
   border-radius: 4px;
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .cards-list__icon {
   margin-top: 25px;
   margin-bottom: 25px;
-}
-
-.cards-list__wrapper {
-  padding-top: 30px;
 }
 
 .cards-list__title {
@@ -1077,12 +1078,6 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .address {
-    margin-bottom: 60px;
-  }
-}
-
 .address-item:not(:last-child) {
   margin-bottom: 8px;
 }
@@ -1151,6 +1146,11 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer-contacts-box {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-contacts-box {
     margin-right: 70px;
@@ -1158,11 +1158,6 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .footer-link-box {
-    margin-bottom: 60px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer-link-box {
     margin-right: 93px;

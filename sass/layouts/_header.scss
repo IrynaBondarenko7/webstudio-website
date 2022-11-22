@@ -221,7 +221,7 @@
   }
 }
 .contacts-list:not(:last-child) {
-  @include tablet {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 10px;
   }
 }

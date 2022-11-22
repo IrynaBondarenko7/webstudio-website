@@ -18,14 +18,16 @@
     }
   }
   @media screen and (min-width: 769px) {
-    padding-top: 200px;
-    padding-bottom: 200px;
     height: 600px;
     max-width: 1600px;
     background-image: var(--gradient), url(../images/hero/img-hero-desk.jpg);
     @include retina {
       background-image: var(--gradient), url(../images/hero/hero-bg-desk-2x.jpg);
     }
+  }
+  @include desktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
