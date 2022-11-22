@@ -4,17 +4,17 @@
   padding-bottom: 118px;
   max-width: 100%;
   margin: 0 auto;
-  background-image: var(--gradient), url(/images/hero/hero-bg-mob.jpg);
+  background-image: var(--gradient), url(../images/hero/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   @include retina {
-    background-image: var(--gradient), url(/images/hero/hero-bg-mob-2x.jpg);
+    background-image: var(--gradient), url(../images/hero/hero-bg-mob-2x.jpg);
   }
   @media screen and (min-width: 481px) {
-    background-image: var(--gradient), url(/images/hero/hero-bg-tab.jpg);
+    background-image: var(--gradient), url(../images/hero/hero-bg-tab.jpg);
     @include retina {
-      background-image: var(--gradient), url(/images/hero/herо-bg-tab-2x.jpg);
+      background-image: var(--gradient), url(../images/hero/herо-bg-tab-2x.jpg);
     }
   }
   @media screen and (min-width: 769px) {
@@ -22,9 +22,9 @@
     padding-bottom: 200px;
     height: 600px;
     max-width: 1600px;
-    background-image: var(--gradient), url(/images/hero/img-hero-desk.jpg);
+    background-image: var(--gradient), url(../images/hero/img-hero-desk.jpg);
     @include retina {
-      background-image: var(--gradient), url(/images/hero/hero-bg-desk-2x.jpg);
+      background-image: var(--gradient), url(../images/hero/hero-bg-desk-2x.jpg);
     }
   }
 }
