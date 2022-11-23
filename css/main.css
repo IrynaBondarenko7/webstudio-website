@@ -406,8 +406,8 @@ body {
 }
 
 .header {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid var(--border-colour);
 }
 @media screen and (min-width: 768px) {
@@ -505,7 +505,7 @@ body {
 
 .menu-open {
   background-color: transparent;
-  border-color: transparent;
+  border: none;
 }
 @media screen and (min-width: 768px) {
   .menu-open {
@@ -604,6 +604,12 @@ body {
 
 .menu-soc {
   display: flex;
+}
+@media screen and (max-width: 479px) {
+  .menu-soc {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
 }
 
 .menu-soc-link {
@@ -1010,6 +1016,11 @@ body {
 .clients {
   padding: 60px 0;
 }
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0;
+  }
+}
 
 .clients-list {
   display: flex;
@@ -1284,9 +1295,21 @@ body {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
-  justify-content: center;
+  margin-bottom: 40px;
+  justify-content: flex-start;
   gap: 8px;
+  row-gap: 15px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    margin-bottom: 50px;
+  }
 }
 
 .button-portfolio {
@@ -1321,11 +1344,6 @@ body {
   border: 1px solid #eeeeee;
   width: 100%;
 }
-@media screen and (max-width: 767px) {
-  .projects-item {
-    margin-bottom: 30px;
-  }
-}
 @media screen and (min-width: 768px) {
   .projects-item {
     width: calc((100% - 30px) / 2);
@@ -1334,6 +1352,12 @@ body {
 @media screen and (min-width: 1200px) {
   .projects-item {
     width: calc((100% - 60px) / 3);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .projects-item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -1354,7 +1378,7 @@ body {
   padding: 77px 24px;
   background: rgba(33, 150, 243, 0.9);
   height: 100%;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms linear;
 }
 .projects-item:hover .projects-top-text {
@@ -1388,9 +1412,19 @@ body {
 .projects-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .projects-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
 
 .projects-box {
   padding: 20px 24px;
-  border: 1px solid var(--border-colour);
-  border-top: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .projects-box {
+    flex-grow: 1;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,6 +1,6 @@
 .header {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid var(--border-colour);
   @include tablet {
     padding-top: 21px;
@@ -78,7 +78,7 @@
 }
 .menu-open {
   background-color: transparent;
-  border-color: transparent;
+  border: none;
   @include tablet {
     display: none;
   }
@@ -158,6 +158,10 @@
 }
 .menu-soc {
   display: flex;
+  @media screen and (max-width: 479px) {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
 }
 .menu-soc-link {
   text-decoration: none;
