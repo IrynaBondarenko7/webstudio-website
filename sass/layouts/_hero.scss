@@ -78,3 +78,31 @@
     min-width: 216px;
   }
 }
+////////Animation
+.animate__heartBeat {
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  14% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  28% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  42% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
